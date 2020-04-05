@@ -8,13 +8,16 @@
 name: Openwrt_Build_x86_64
 
 on: 
-  push:
-    branches: 
-      - master
+  release:
+    types: [published]
+
+  #push:
+  #  branches: 
+  #    - master
+
   #schedule:
   #  - cron: 0 8 * * 5
-  #release:
-  #  types: [published]
+  
   watch:
     types: [started]
 
